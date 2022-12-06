@@ -51,3 +51,7 @@ public function dbExists($dbName = '')
 # exp
 
 详见本仓库的exp.py文件
+
+# 免责声明
+
+本仓库仅用于学习，请勿用于实际场景，一切后果由使用者自负。

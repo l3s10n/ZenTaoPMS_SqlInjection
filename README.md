@@ -4,7 +4,7 @@
 
 ZenTao is the #1 Team Collaborative Tool for R&D teams in China with 1.4 Million Users. It has many users, such as Twitter, Lenovo, etc. Here is its official website: https://www.zentao.pm/ (English) and https://www.zentao.net/ (Chinese).
 
-After logging in with any user, you can complete SQL injection by constructing a special request and sending it to function importNotice of controller convert.
+After logging in with any user, you can complete SQL injection by constructing a special request and sending it to function importNotice of controller convert. Since the SQL injection here is stack injection and can execute any SQL statement, you can directly getshell through the SQL statement in case of improper configuration.
 
 # Version affected
 

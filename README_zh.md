@@ -2,7 +2,13 @@
 
 English : [README.md](./README.md)
 
+ZenTao是中国研发团队的头号团队协作工具，拥有140万用户。它有许多用户，如Twitter、联想等。以下是它的官方网站：https://www.zentao.pm/（英语）和https://www.zentao.net/（中文）。
+
 使用任意用户登录之后，通过向控制器convert的importNotice方法发送特殊构造的请求报文，即可完成sql注入。
+
+# 影响版本
+
+16.4 <= versions <= 最新(18.0.beta1)
 
 # 原理
 

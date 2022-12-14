@@ -2,7 +2,13 @@
 
 中文 : [README_zh.md](./README_zh.md)
 
+ZenTao is the #1 Team Collaborative Tool for R&D teams in China with 1.4 Million Users. It has many users, such as Twitter, Lenovo, etc. Here is its official website: https://www.zentao.pm/ (English) and https://www.zentao.net/ (Chinese).
+
 After logging in with any user, you can complete SQL injection by constructing a special request and sending it to function importNotice of controller convert.
+
+# Version affected
+
+16.4 <= versions <= latest(18.0.beta1)
 
 # Principle
 

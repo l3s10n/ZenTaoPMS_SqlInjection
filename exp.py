@@ -1,4 +1,4 @@
-import requests
+import requests, gnureadline
 
 url = input("Please input index url (eg. http://xxx/zentaopms/www/index.php): ")
 zentaosid = input("Please input zentaosid (you can get this from cookie): ")

